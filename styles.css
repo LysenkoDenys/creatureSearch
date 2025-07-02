@@ -1,0 +1,261 @@
+:root {
+  --color-primary: #e3e6ec;
+  --color-secondary: #1e293b;
+  --radius: 1rem;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  background: rgb(59, 125, 59);
+  color: var(--color-primary);
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  line-height: 1.2;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.inputs h4 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+
+#search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  max-width: 280px;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+  background-color: #334155;
+}
+
+.info {
+  background-color: gray;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--color-primary);
+  max-width: 600px;
+  width: 100%;
+  min-height: 200px;
+}
+
+#creature-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#creature-id {
+  font-weight: normal;
+  color: #d1d5db;
+  margin-left: 0.5rem;
+}
+
+.name-id-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.name-id-line h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.name-id-line span {
+  font-weight: normal;
+  color: #d1d5db;
+  font-size: 1.2rem;
+}
+
+.info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#types {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Optional: lets the items wrap on small screens */
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+#types li {
+  background-color: var(--color-secondary);
+  border: 1px solid white;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+#types li:hover {
+  transform: scale(1.05);
+}
+
+#special-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.2rem;
+}
+
+#special-description {
+  max-width: 250px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.stats {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9fafb;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+thead {
+  background-color: #1e293b;
+  color: white;
+}
+
+th,
+td {
+  border: 3px solid #e5e7eb;
+  text-align: left;
+  padding: 7px 10px;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+tbody tr:hover {
+  background-color: #e0f2fe;
+  cursor: default;
+}
+
+#hp,
+#attack,
+#defense,
+#special-attack,
+#special-defense,
+#speed {
+  text-align: right;
+  font-weight: 600;
+}
+
+.inputs input,
+.inputs button {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.info,
+.stats,
+.inputs {
+  transition: transform 0.3s ease;
+}
+.info:hover,
+.stats:hover,
+.inputs:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 600px) {
+  .inputs,
+  .info,
+  .stats {
+    padding: 1rem;
+  }
+
+  table th,
+  table td {
+    font-size: 0.85rem;
+  }
+}
