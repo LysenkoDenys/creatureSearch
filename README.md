@@ -52,7 +52,6 @@ Alerts when an invalid creature is searched
 ├── styles.css # App styling
 ├── script.js # JavaScript logic
 ├── README.md # This file
-└── screenshot.png # Optional demo screenshot
 </pre>
 
 🔮 Future Improvements
