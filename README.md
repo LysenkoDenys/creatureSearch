@@ -13,14 +13,13 @@ A simple web application that allows users to search for RPG-style creatures by 
 
 ## 🖼️ Demo
 
-![App Screenshot](./screenshot.png) <!-- Replace with your actual screenshot file -->
+![Image](https://github.com/user-attachments/assets/c5ed4628-1edb-4ef7-8ccd-db5af2bda0d2)
 
 ## 📦 Technologies Used
 
 - HTML5 & CSS3
 - JavaScript (ES6)
 - Fetch API
-- Font Awesome (for icons)
 
 ## 🛠️ How to Run Locally
 
@@ -32,10 +31,6 @@ A simple web application that allows users to search for RPG-style creatures by 
    ```
 
 Open index.html in your browser:
-
-bash
-Копіювати
-Редагувати
 open index.html
 Or use Live Server (recommended in VS Code).
 
@@ -51,23 +46,19 @@ Displays correct types, including clearing previous ones
 Alerts when an invalid creature is searched
 
 📁 Project Structure
-bash
-Копіювати
-Редагувати
-.
+
+<pre>
 ├── index.html # Main HTML file
 ├── styles.css # App styling
 ├── script.js # JavaScript logic
 ├── README.md # This file
 └── screenshot.png # Optional demo screenshot
+</pre>
 
 🔮 Future Improvements
 Add creature images
-
 Debounced input with live search
-
 Favorite creatures list (localStorage)
-
 Accessibility enhancements (keyboard nav, ARIA)
 
 📄 License
